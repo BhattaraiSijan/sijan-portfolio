@@ -25,6 +25,26 @@
             padding: 3rem;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
+        nav {
+            background-color: #444;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #aca8ba;
+        }
+        .linkedin-icon {
+            width: 24px;
+            vertical-align: middle;
+            margin-left: 10px;
+        }
         header .profile-pic {
             width: 200px;
             border-radius: 50%;
@@ -153,6 +173,16 @@
     </style>
 </head>
 <body>
+    <nav>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#blog">Blog</a>
+        <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">
+            <img src="linkedin-logo.png" alt="LinkedIn" class="linkedin-icon">
+        </a>
+    </nav>
+
     <header>
         <div class="container">
             <img src="sijan_image.jpg" alt="Sijan Bhattarai" class="profile-pic">
