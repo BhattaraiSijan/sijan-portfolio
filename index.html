@@ -21,20 +21,22 @@
             background-color: #51379e;
             color: white;
             text-align: center;
-            padding: 2rem;
+            padding: 3rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         header .profile-pic {
-            width: 150px;
+            width: 180px;
             border-radius: 50%;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         header h1 {
             font-size: 2.5rem;
-            margin-bottom: 0.5rem;
+            margin-bottom: 1rem;
         }
         header p {
-            font-size: 1.1rem;
-            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
         }
         .section {
             padding: 3rem 0;
@@ -49,21 +51,21 @@
             margin-bottom: 1.5rem;
             color: #51379e;
         }
-        .project, .experience {
+        .project, .education {
             background-color: white;
-            padding: 1.5rem;
-            margin: 1rem 0;
+            padding: 2rem;
+            margin: 2rem 0;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: left;
         }
-        .project h3, .experience h3 {
+        .project h3 {
             color: #51379e;
         }
         .btn {
             display: inline-block;
-            margin-top: 1rem;
-            padding: 0.5rem 1.5rem;
+            margin-top: 1.5rem;
+            padding: 0.7rem 1.5rem;
             background-color: #51379e;
             color: white;
             text-decoration: none;
@@ -85,6 +87,14 @@
             padding: 1rem 0;
             text-align: center;
         }
+        .blog-post {
+            background-color: white;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
     </style>
 </head>
 <body>
@@ -92,8 +102,7 @@
         <div class="container">
             <img src="sijan_image.jpg" alt="Sijan Bhattarai" class="profile-pic">
             <h1>Sijan Bhattarai</h1>
-            <p>Business Intelligence Data Analyst with a strong software engineering background. Passionate about data, technology, and the outdoors.</p>
-            <a href="sijan_bhattarai.pdf" target="_blank" class="btn">Download CV</a>
+            <p>Hi, I'm Sijan Bhattarai. I specialize in understanding customers and using data-driven insights to drive impactful business decisions. Below, you can explore some of my work that demonstrates my expertise in Business Intelligence. If you're interested in collaborating or learning more, feel free to download my CV or reach out to me directly.</p>
         </div>
     </header>
 
@@ -108,32 +117,25 @@
         </div>
     </section>
 
-    <section id="resume" class="section">
+    <section id="education" class="section">
         <div class="container">
-            <h2>Resume</h2>
-            <iframe src="sijan_bhattarai.pdf"></iframe>
+            <h2>Education</h2>
+            <div class="education">
+                <p><strong>Georgia State University:</strong> Master’s in Business Administration (MBA), May 2024</p>
+                <p><strong>Tribhuvan University:</strong> Bachelor of Engineering, Electronics and Communication, Sept 2018</p>
+            </div>
         </div>
     </section>
 
     <section id="blog" class="section">
         <div class="container">
             <h2>Blog</h2>
-            <p>Coming Soon: How to Proactively Practice Empathy Using the JTBD Framework</p>
-        </div>
-    </section>
-
-    <section id="experience" class="section">
-        <div class="container">
-            <h2>Professional Experience</h2>
-            <!-- Experience content remains unchanged -->
-        </div>
-    </section>
-
-    <section id="education" class="section">
-        <div class="container">
-            <h2>Education</h2>
-            <p><strong>Georgia State University:</strong> Master’s in Business Administration (MBA), May 2024</p>
-            <p><strong>Tribhuvan University:</strong> Bachelor of Engineering, Electronics and Communication, Sept 2018</p>
+            <div class="blog-post">
+                <h3>How to Proactively Practice Empathy Using the JTBD Framework</h3>
+                <p><strong>Published on:</strong> November 12, 2024</p>
+                <p>Empathy is one of the most powerful tools in understanding customer needs and creating impactful products. Using the Jobs-To-Be-Done (JTBD) framework allows you to go beyond the surface and understand the underlying motivations and struggles of your customers...</p>
+                <p><em>Continue reading the full post later for more insights on applying empathy in business strategy.</em></p>
+            </div>
         </div>
     </section>
 
