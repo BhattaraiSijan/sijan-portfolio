@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sijan Bhattarai's - Portfolio</title>
+    <title>Sijan Bhattarai - From Software Engineering to Business Intelligence</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Arial', sans-serif;
+            scroll-behavior: smooth;
         }
         body {
             background-color: #f5f5f5;
@@ -21,40 +22,61 @@
             background-color: #51379e;
             color: white;
             text-align: center;
-            padding: 3rem;
+            padding: 4rem;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         header .profile-pic {
-            width: 180px;
+            width: 200px;
             border-radius: 50%;
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         header h1 {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             margin-bottom: 1rem;
         }
         header p {
             font-size: 1.2rem;
-            margin-bottom: 2rem;
+            margin-bottom: 2.5rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
         .section {
-            padding: 3rem 0;
+            padding: 2.5rem 0;
             text-align: center;
+            transition: background-color 0.3s, padding 0.3s;
+        }
+        .section:nth-child(odd) {
+            background-color: #ffffff;
+        }
+        .section:nth-child(even) {
+            background-color: #f3f3f3;
         }
         .container {
             width: 80%;
             margin: auto;
         }
         h2 {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
+            font-size: 2.2rem;
+            margin-bottom: 1.2rem;
             color: #51379e;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+        }
+        h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: #51379e;
+            margin: 0.5rem auto 1.5rem;
         }
         .project, .education {
             background-color: white;
             padding: 2rem;
-            margin: 2rem 0;
+            margin: 1.5rem 0;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: left;
@@ -90,7 +112,7 @@
         .blog-post {
             background-color: white;
             padding: 2rem;
-            margin: 2rem 0;
+            margin: 1.5rem 0;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: left;
@@ -102,7 +124,7 @@
         <div class="container">
             <img src="sijan_image.jpg" alt="Sijan Bhattarai" class="profile-pic">
             <h1>Sijan Bhattarai</h1>
-            <p>Hi, I'm Sijan Bhattarai. I specialize in understanding customers and using data-driven insights to drive impactful business decisions. Below, you can explore some of my work that demonstrates my expertise in Business Intelligence. If you're interested in collaborating or learning more, feel free to download my CV or reach out to me directly.</p>
+            <p>I'm an experienced software engineer transitioning into a Business Intelligence Analyst role. During my leadership at TAI Inc., I became passionate about understanding the business side of technology, and I now use data-driven insights to impact businesses. Explore my work below, and let's talk if you're interested in collaborating.</p>
         </div>
     </header>
 
@@ -114,6 +136,13 @@
                 <p>A comprehensive analysis of GoFundMe donation patterns, exploring campaign categories, social media influence, and geographical trends.</p>
                 <iframe src="https://public.tableau.com/views/Book1_17313460014950/Dashboard1?:showVizHome=no&:embed=true"></iframe>
             </div>
+        </div>
+    </section>
+
+    <section id="resume" class="section">
+        <div class="container">
+            <h2>Resume</h2>
+            <iframe src="sijan_bhattarai.pdf"></iframe>
         </div>
     </section>
 
