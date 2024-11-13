@@ -84,6 +84,21 @@
         .project h3 {
             color: #51379e;
         }
+        .experience-container {
+            background-color: white;
+            padding: 2rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            height: 600px;
+            overflow-y: auto;
+        }
+        .experience {
+            margin-bottom: 1.5rem;
+        }
+        .experience h3 {
+            color: #51379e;
+        }
         .btn {
             display: inline-block;
             margin-top: 1.5rem;
@@ -96,12 +111,6 @@
         }
         .btn:hover {
             background-color: #aca8ba;
-        }
-        iframe {
-            width: 100%;
-            height: 600px;
-            border: none;
-            margin-top: 1rem;
         }
         footer {
             background-color: #aca8ba;
@@ -124,7 +133,7 @@
         <div class="container">
             <img src="sijan_image.jpg" alt="Sijan Bhattarai" class="profile-pic">
             <h1>Sijan Bhattarai</h1>
-            <p>I'm an experienced software engineer transitioning into a Business Intelligence Analyst role. During my leadership at TAI Inc., I became passionate about understanding the business side of technology, and I now use data-driven insights to impact businesses. Explore my work below, and let's talk if you're interested in collaborating.</p>
+            <p>With a solid foundation in software engineering and a growing expertise in business intelligence, I bridge technical proficiency with strategic insight. My experience in leadership roles, particularly at TAI Inc., sparked a passion for using data to drive impactful business decisions. I thrive at the intersection of technology and business, helping organizations turn complex data into actionable insights. If your company values data-driven strategies and customer-focused growth, let's connect.</p>
         </div>
     </header>
 
@@ -139,10 +148,37 @@
         </div>
     </section>
 
-    <section id="resume" class="section">
+    <section id="experience" class="section">
         <div class="container">
-            <h2>Resume</h2>
-            <iframe src="sijan_bhattarai.pdf"></iframe>
+            <h2>Professional Experience</h2>
+            <div class="experience-container">
+                <div class="experience">
+                    <h3>Graduate Research Assistant, Atlanta, GA</h3>
+                    <p>Georgia State University | Aug 2022 – Present</p>
+                    <ul>
+                        <li>Deployed interactive experiments using the Empirica.ly framework in AWS EC2 that improved data quality.</li>
+                        <li>Built a Psychology Counseling AI bot using Langflow, FastAPI, and RAG.</li>
+                        <li>Built data analysis pipelines for non-profit campaigns using Python.</li>
+                    </ul>
+                </div>
+                <div class="experience">
+                    <h3>Senior Software Engineer | Manager, Tokyo, Japan</h3>
+                    <p>TAI Inc. Pvt. Ltd | Nov 2020 – Jul 2022</p>
+                    <ul>
+                        <li>Directed team coordination and grew the cross-functional team while maintaining a high sprint completion rate.</li>
+                        <li>Built CI/CD pipelines, reducing manual deployment effort by 50%.</li>
+                        <li>Developed backend services and managed cloud infrastructure on AWS.</li>
+                    </ul>
+                </div>
+                <div class="experience">
+                    <h3>Senior Software Engineer, Dubai, UAE</h3>
+                    <p>Freelance Agencies | Apr 2019 – Nov 2020</p>
+                    <ul>
+                        <li>Led a team launching e-commerce platforms, achieving significant traffic.</li>
+                        <li>Integrated payment gateways and automated product data updates.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
