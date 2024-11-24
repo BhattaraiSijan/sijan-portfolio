@@ -26,24 +26,25 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         nav {
-            background-color: #444;
-            padding: 0.5rem;
-            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #333;
+            padding: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         nav a {
             color: white;
             text-decoration: none;
             margin: 0 1rem;
             font-size: 1rem;
-            transition: color 0.3s;
+            transition: color 0.3s, background-color 0.3s;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
         }
         nav a:hover {
-            color: #aca8ba;
-        }
-        .linkedin-icon {
-            width: 24px;
-            vertical-align: middle;
-            margin-left: 10px;
+            background-color: #51379e;
+            color: #fff;
         }
         header .profile-pic {
             width: 200px;
@@ -111,7 +112,7 @@
             margin: 1.5rem 0;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            height: 600px;
+            height: auto;
             overflow-y: auto;
             text-align: left;
         }
@@ -160,8 +161,6 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: left;
-            height: 600px;
-            overflow-y: auto;
         }
         .blog-post h3 {
             color: #51379e;
@@ -177,17 +176,20 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: left;
+            display: flex;
+            align-items: center;
         }
         .certificate img {
             width: 200px;
             height: auto;
             border-radius: 8px;
-            margin-bottom: 1.5rem;
+            margin-right: 2rem;
         }
     </style>
 </head>
 <body>
     <nav>
+        <a href="#home">Home</a>
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
         <a href="#education">Education</a>
@@ -198,207 +200,7 @@
         </a>
     </nav>
 
-   <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sijan Bhattarai - From Software Engineering to Business Intelligence</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-            scroll-behavior: smooth;
-        }
-        body {
-            background-color: #f5f5f5;
-            color: #333;
-            line-height: 1.6;
-        }
-        header {
-            background-color: #51379e;
-            color: white;
-            text-align: center;
-            padding: 3rem;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        nav {
-            background-color: #444;
-            padding: 0.5rem;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1rem;
-            font-size: 1rem;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: #aca8ba;
-        }
-        .linkedin-icon {
-            width: 24px;
-            vertical-align: middle;
-            margin-left: 10px;
-        }
-        header .profile-pic {
-            width: 200px;
-            border-radius: 50%;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-        header p {
-            font-size: 1.1rem;
-            margin-bottom: 2rem;
-            max-width: 1000px;
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
-        }
-        .section {
-            padding: 2.5rem 0;
-            text-align: center;
-            transition: background-color 0.3s, padding 0.3s;
-        }
-        .section:nth-child(odd) {
-            background-color: #ffffff;
-        }
-        .section:nth-child(even) {
-            background-color: #f3f3f3;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-        }
-        h2 {
-            font-size: 2.2rem;
-            margin-bottom: 1.2rem;
-            color: #51379e;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            position: relative;
-        }
-        h2::after {
-            content: '';
-            display: block;
-            width: 60px;
-            height: 4px;
-            background-color: #51379e;
-            margin: 0.5rem auto 1.5rem;
-        }
-        .project {
-            background-color: white;
-            padding: 2rem;
-            margin: 1.5rem 0;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: left;
-        }
-        .project h3 {
-            color: #51379e;
-        }
-        .experience-container {
-            background-color: white;
-            padding: 2rem;
-            margin: 1.5rem 0;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            height: 600px;
-            overflow-y: auto;
-            text-align: left;
-        }
-        .experience {
-            margin-bottom: 1.5rem;
-        }
-        .experience h3 {
-            color: #51379e;
-            margin-bottom: 0.5rem;
-        }
-        .experience p {
-            font-weight: bold;
-            margin-bottom: 0.5rem;
-        }
-        .experience ul {
-            list-style-type: disc;
-            padding-left: 20px;
-            margin-top: 0.5rem;
-        }
-        .experience li {
-            margin-bottom: 0.5rem;
-        }
-        .btn {
-            display: inline-block;
-            margin-top: 1.5rem;
-            padding: 0.7rem 1.5rem;
-            background-color: #51379e;
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-            transition: background-color 0.3s;
-        }
-        .btn:hover {
-            background-color: #aca8ba;
-        }
-        footer {
-            background-color: #aca8ba;
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        .blog-post {
-            background-color: white;
-            padding: 2rem;
-            margin: 1.5rem 0;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: left;
-            height: 600px;
-            overflow-y: auto;
-        }
-        .blog-post h3 {
-            color: #51379e;
-            margin-bottom: 1rem;
-        }
-        .blog-post p {
-            margin-bottom: 1rem;
-        }
-        .certificate {
-            background-color: white;
-            padding: 2rem;
-            margin: 1.5rem 0;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: left;
-        }
-        .certificate img {
-            width: 200px;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 1.5rem;
-        }
-    </style>
-</head>
-<body>
-    <nav>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#certificates">Certificates</a>
-        <a href="#blog">Blog</a>
-        <a href="https://www.linkedin.com/in/sijan-bhattarai" target="_blank">
-            Linkedin
-        </a>
-    </nav>
-
-    <header>
+    <header id="home">
         <div class="container">
             <img src="sijan_image.jpg" alt="Sijan Bhattarai" class="profile-pic">
             <h1>Sijan Bhattarai</h1>
@@ -421,6 +223,7 @@
         <div class="container">
             <h2>Professional Experience</h2>
             <div class="experience-container">
+                <!-- Full experiences copied from resume -->
                 <div class="experience">
                     <h3>Graduate Research Assistant, Atlanta, GA</h3>
                     <p>Georgia State University | Aug 2022 – Present</p>
@@ -447,6 +250,7 @@
                         <li>Integrated multiple payment gateways and automated product data updates, improving operational efficiency and customer satisfaction.</li>
                     </ul>
                 </div>
+                <!-- Add any additional experiences here as per the full resume -->
             </div>
         </div>
     </section>
@@ -465,16 +269,20 @@
         <div class="container">
             <h2>Certificates</h2>
             <div class="certificate">
-                <h3>Tableau Business Intelligence Analyst Professional Certificate</h3>
                 <img src="Tableau_cert.PNG" alt="Tableau BI Analyst Certificate">
-                <p>Earned the Tableau Business Intelligence Analyst Professional Certificate, focusing on creating interactive data visualizations and dashboards. Gained expertise in best practices for visual storytelling and data-driven decision-making.</p>
-                <p><a href="https://coursera.org/verify/professional-cert/E23VQIZHN8E8" target="_blank">Verify this Certificate</a></p>
+                <div>
+                    <h3>Tableau Business Intelligence Analyst Professional Certificate</h3>
+                    <p>Earned the Tableau Business Intelligence Analyst Professional Certificate, focusing on creating interactive data visualizations and dashboards. Gained expertise in best practices for visual storytelling and data-driven decision-making.</p>
+                    <p><a href="https://coursera.org/verify/professional-cert/E23VQIZHN8E8" target="_blank">Verify this Certificate</a></p>
+                </div>
             </div>
             <div class="certificate">
-                <h3>Google Data Analytics Professional Certificate</h3>
                 <img src="Google_cert.PNG" alt="Google Data Analytics Certificate">
-                <p>Completed the Google Data Analytics Professional Certificate, gaining comprehensive training in data preparation, cleaning, analysis, and visualization. Tools used include spreadsheets, SQL, Tableau, and R to drive data-centric decisions.</p>
-                <p><a href="https://coursera.org/verify/professional-cert/V7SA9E1PAH6Y" target="_blank">Verify this Certificate</a></p>
+                <div>
+                    <h3>Google Data Analytics Professional Certificate</h3>
+                    <p>Completed the Google Data Analytics Professional Certificate, gaining comprehensive training in data preparation, cleaning, analysis, and visualization. Tools used include spreadsheets, SQL, Tableau, and R to drive data-centric decisions.</p>
+                    <p><a href="https://coursera.org/verify/professional-cert/V7SA9E1PAH6Y" target="_blank">Verify this Certificate</a></p>
+                </div>
             </div>
         </div>
     </section>
@@ -489,6 +297,12 @@
                 Applying the JTBD framework allowed me to understand the motivations behind actions, which enhanced my empathy and design process. It has become a tool that informs both product design and daily human interactions.</p>
                 <p><strong>Implications for Business and Product Design</strong><br>
                 By understanding the jobs customers are trying to accomplish, products can be better aligned with their true needs. This understanding translates into better product-market fit, enhanced customer satisfaction, and more impactful solutions.</p>
+                <p><strong>Full Blog Content:</strong></p>
+                <p>In the evolving world of product design, empathy isn't just a buzzword—it's an essential skill that defines whether a product will meet the real needs of its users or fade into irrelevance. One tool that stands out in helping designers and product teams tap into empathy is the Jobs-to-be-Done (JTBD) framework.</p>
+                <p>The JTBD framework centers around the idea that customers "hire" products or services to get a specific job done. Understanding the job allows companies to focus on what really matters to customers, going beyond mere feature comparison and diving into motivations and outcomes. It's about understanding the deeper motivations behind why someone would choose your product over another.</p>
+                <p>During my journey of exploring JTBD, I've learned that every feature, every experience, and every decision in product development should serve the core job customers need to achieve. Instead of just adding bells and whistles, it has shifted my perspective to focus on what job needs solving and how efficiently my solution can do it. This mental shift has profound implications not only in business but in daily interactions as well.</p>
+                <p>Take for example a typical morning routine. We use a variety of products—an alarm clock, a coffee maker, a toothbrush—all of which have specific jobs in helping us transition from sleep to being productive. By dissecting our own behaviors and motivations through this lens, we become more attuned to the human experience, gaining insights that apply directly to product development.</p>
+                <p>Empathy, through JTBD, thus becomes actionable. It’s no longer just about putting yourself in the user’s shoes, but truly understanding what job they’re trying to get done and aligning your product accordingly. This alignment ensures that you’re not just providing features but solving problems, and that is what ultimately drives value.</p>
             </div>
         </div>
     </section>
@@ -498,7 +312,5 @@
             <p>© 2024 Sijan Bhattarai | <a href="mailto:bhattaraisijan@outlook.com">Contact Me</a></p>
         </div>
     </footer>
-</body>
-</html>
 </body>
 </html>
