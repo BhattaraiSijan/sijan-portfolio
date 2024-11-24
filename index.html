@@ -198,11 +198,211 @@
         </a>
     </nav>
 
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sijan Bhattarai - From Software Engineering to Business Intelligence</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #51379e;
+            color: white;
+            text-align: center;
+            padding: 3rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        nav {
+            background-color: #444;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #aca8ba;
+        }
+        .linkedin-icon {
+            width: 24px;
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+        header .profile-pic {
+            width: 200px;
+            border-radius: 50%;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        header p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        .section {
+            padding: 2.5rem 0;
+            text-align: center;
+            transition: background-color 0.3s, padding 0.3s;
+        }
+        .section:nth-child(odd) {
+            background-color: #ffffff;
+        }
+        .section:nth-child(even) {
+            background-color: #f3f3f3;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1.2rem;
+            color: #51379e;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+        }
+        h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: #51379e;
+            margin: 0.5rem auto 1.5rem;
+        }
+        .project {
+            background-color: white;
+            padding: 2rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .project h3 {
+            color: #51379e;
+        }
+        .experience-container {
+            background-color: white;
+            padding: 2rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            height: 600px;
+            overflow-y: auto;
+            text-align: left;
+        }
+        .experience {
+            margin-bottom: 1.5rem;
+        }
+        .experience h3 {
+            color: #51379e;
+            margin-bottom: 0.5rem;
+        }
+        .experience p {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        .experience ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-top: 0.5rem;
+        }
+        .experience li {
+            margin-bottom: 0.5rem;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 0.7rem 1.5rem;
+            background-color: #51379e;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #aca8ba;
+        }
+        footer {
+            background-color: #aca8ba;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .blog-post {
+            background-color: white;
+            padding: 2rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            height: 600px;
+            overflow-y: auto;
+        }
+        .blog-post h3 {
+            color: #51379e;
+            margin-bottom: 1rem;
+        }
+        .blog-post p {
+            margin-bottom: 1rem;
+        }
+        .certificate {
+            background-color: white;
+            padding: 2rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .certificate img {
+            width: 200px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#blog">Blog</a>
+        <a href="https://www.linkedin.com/in/sijan-bhattarai" target="_blank">
+            Linkedin
+        </a>
+    </nav>
+
     <header>
         <div class="container">
             <img src="sijan_image.jpg" alt="Sijan Bhattarai" class="profile-pic">
             <h1>Sijan Bhattarai</h1>
-            <p>With a solid foundation in software engineering and a growing expertise in business intelligence, I bridge technical proficiency with strategic insight. My experience in leadership roles, particularly at TAI Inc., sparked a passion for using data to drive impactful business decisions. I thrive at the intersection of technology and business, helping organizations turn complex data into actionable insights. If your company values data-driven strategies and customer-focused growth, <a href="mailto:bhattaraisijan@outlook.com" style="color: #fff; text-decoration: underline;">let's connect</a>.</p>
+            <p>I am an impact-driven leader passionate about bridging the gap between technology and human needs. My journey from software engineering to business intelligence is fueled by my desire to create solutions that directly impact people's lives. I thrive in environments where my contributions are essential, and I have a say in the strategic direction of the team. Whether it’s leading small teams or working on early-stage initiatives, my focus is on creating meaningful, technology-driven solutions that add real value. If your company values innovation, human-centered technology, and impactful growth, <a href="mailto:bhattaraisijan@outlook.com" style="color: #fff; text-decoration: underline;">let's connect</a>.</p>
         </div>
     </header>
 
@@ -211,7 +411,7 @@
             <h2>Business Intelligence Projects</h2>
             <div class="project">
                 <h3>Donor Behavior Analytics</h3>
-                <p>A comprehensive analysis of GoFundMe donation patterns, exploring campaign categories, social media influence, and geographical trends.</p>
+                <p>Led a comprehensive analysis of GoFundMe donation patterns to understand the dynamics of campaign success. Focused on campaign categories, social media influence, and geographical trends to provide actionable insights that can maximize reach and impact. This project showcased my ability to turn data into strategic decisions that drive real-world outcomes.</p>
                 <iframe src="https://public.tableau.com/views/Book1_17313460014950/Dashboard1?:showVizHome=no&:embed=true" width="100%" height="600"></iframe>
             </div>
         </div>
@@ -225,26 +425,26 @@
                     <h3>Graduate Research Assistant, Atlanta, GA</h3>
                     <p>Georgia State University | Aug 2022 – Present</p>
                     <ul>
-                        <li>Deployed interactive experiments using the Empirica.ly framework in AWS EC2 that improved data quality.</li>
-                        <li>Built a Psychology Counseling AI bot using Langflow, FastAPI, and RAG.</li>
-                        <li>Built data analysis pipelines for non-profit campaigns using Python.</li>
+                        <li>Deployed interactive behavioral economics experiments using Empirica.ly, hosted on AWS EC2, enhancing the quality of data collected for impactful research.</li>
+                        <li>Developed an AI-driven Psychology Counseling bot using Langflow, FastAPI, and Retrieval-Augmented Generation (RAG), aimed at providing personalized and effective guidance to students.</li>
+                        <li>Built data analysis pipelines for non-profit campaigns using Python, allowing campaign managers to make informed, data-driven decisions.</li>
                     </ul>
                 </div>
                 <div class="experience">
                     <h3>Senior Software Engineer | Manager, Tokyo, Japan</h3>
                     <p>TAI Inc. Pvt. Ltd | Nov 2020 – Jul 2022</p>
                     <ul>
-                        <li>Directed team coordination and grew the cross-functional team while maintaining a high sprint completion rate.</li>
-                        <li>Built CI/CD pipelines, reducing manual deployment effort by 50%.</li>
-                        <li>Developed backend services and managed cloud infrastructure on AWS.</li>
+                        <li>Led cross-functional teams, facilitating collaboration between Nepali and Japanese team members while maintaining a high sprint completion rate.</li>
+                        <li>Built CI/CD pipelines that reduced manual deployment efforts by 50%, enabling rapid delivery of new features and enhancements.</li>
+                        <li>Developed backend services and managed cloud infrastructure on AWS, ensuring secure and scalable solutions for multiple international projects.</li>
                     </ul>
                 </div>
                 <div class="experience">
                     <h3>Senior Software Engineer, Dubai, UAE</h3>
                     <p>Freelance Agencies | Apr 2019 – Nov 2020</p>
                     <ul>
-                        <li>Led a team launching e-commerce platforms, achieving significant traffic.</li>
-                        <li>Integrated payment gateways and automated product data updates.</li>
+                        <li>Led a team launching e-commerce platforms, achieving significant traffic growth through effective technical implementation and optimization.</li>
+                        <li>Integrated multiple payment gateways and automated product data updates, improving operational efficiency and customer satisfaction.</li>
                     </ul>
                 </div>
             </div>
@@ -267,13 +467,13 @@
             <div class="certificate">
                 <h3>Tableau Business Intelligence Analyst Professional Certificate</h3>
                 <img src="Tableau_cert.PNG" alt="Tableau BI Analyst Certificate">
-                <p>Earned the Tableau Business Intelligence Analyst Professional Certificate, which provided project-based learning focused on creating sophisticated interactive data visualizations and dashboards using Tableau, along with best practices in visual storytelling and data communication.</p>
+                <p>Earned the Tableau Business Intelligence Analyst Professional Certificate, focusing on creating interactive data visualizations and dashboards. Gained expertise in best practices for visual storytelling and data-driven decision-making.</p>
                 <p><a href="https://coursera.org/verify/professional-cert/E23VQIZHN8E8" target="_blank">Verify this Certificate</a></p>
             </div>
             <div class="certificate">
                 <h3>Google Data Analytics Professional Certificate</h3>
                 <img src="Google_cert.PNG" alt="Google Data Analytics Certificate">
-                <p>Completed the Google Data Analytics Professional Certificate, which includes eight courses covering foundational data concepts, data preparation, cleaning, analysis, and visualization. Tools used include spreadsheets, SQL, Tableau, and R.</p>
+                <p>Completed the Google Data Analytics Professional Certificate, gaining comprehensive training in data preparation, cleaning, analysis, and visualization. Tools used include spreadsheets, SQL, Tableau, and R to drive data-centric decisions.</p>
                 <p><a href="https://coursera.org/verify/professional-cert/V7SA9E1PAH6Y" target="_blank">Verify this Certificate</a></p>
             </div>
         </div>
@@ -284,32 +484,21 @@
             <h2>Blog</h2>
             <div class="blog-post">
                 <h3>Practicing Empathy with the Jobs-to-be-Done Framework</h3>
-                <p>During a course called <em>Innovation and Creativity</em>, I was introduced to a concept that completely changed how I view human behavior and product design: the Jobs-to-be-Done (JTBD) framework. This framework posits that people don’t simply buy products or use services—they “hire” them to get specific jobs done. Understanding this nuance reshaped how I think about empathy and the ways we can proactively improve it in everyday life.</p>
+                <p>Empathy in product design means understanding the underlying jobs people "hire" products for. In my exploration of the JTBD framework, I found a practical path to understanding consumer needs beyond metrics—focusing on motivations that are often hidden but vital to human experience. This has reshaped how I view both technology and its role in society.</p>
                 <p><strong>The JTBD Framework in Everyday Life</strong><br>
-                The core idea of JTBD is that every action we take is driven by a job we’re trying to accomplish. For instance, when someone opens a transit app like MARTA, they’re not just seeking information but are likely hiring the app to make their commute less stressful. Their underlying job might be “planning a smooth, delay-free journey,” and pain points like confusing interface elements or slow updates can frustrate that effort.</p>
-                <p>When I started using the MARTA app during my time in Atlanta, I found myself naturally applying the JTBD framework. I would dissect every feature, trying to understand what jobs people were hiring the app for and how well it served those needs. This habit made me more aware of others' motivations, struggles, and emotional responses. It sparked a sense of empathy—an understanding of what it feels like to be in another person's shoes, trying to accomplish their task seamlessly.</p>
-                <p><strong>Breaking Down Actions to Build Empathy</strong><br>
-                To actively practice empathy using JTBD, I developed a routine. I would observe people around me—on buses, in classrooms, or at public parks—and try to understand their behaviors through the lens of the jobs they were trying to do. I’d break down their actions into smaller units and think about the pain points, emotions, and rewards tied to each task. For example:</p>
-                <ul>
-                    <li><strong>Public Transit Users:</strong> Navigating schedules and planning routes efficiently while hoping to avoid delays.</li>
-                    <li><strong>Students in Class:</strong> Staying engaged and taking meaningful notes, fighting the distraction of digital notifications.</li>
-                    <li><strong>Shoppers at Grocery Stores:</strong> Trying to make quick yet thoughtful purchasing decisions while managing their budgets.</li>
-                </ul>
-                <p>This approach made me more attuned to the small frustrations that can significantly impact someone's day. By mentally mapping out the motivations and emotions behind others’ actions, I cultivated a more nuanced understanding of their perspectives.</p>
-                <p><strong>How This Practice Enhances Empathy</strong><br>
-                Applying the JTBD framework in daily life allows us to step outside of our assumptions and biases. Instead of judging or dismissing behavior as irrational, we learn to consider the jobs people are trying to accomplish and the obstacles they face. This structured way of thinking fosters a deeper appreciation of other people’s experiences and needs, making empathy less abstract and more actionable.</p>
+                Applying the JTBD framework allowed me to understand the motivations behind actions, which enhanced my empathy and design process. It has become a tool that informs both product design and daily human interactions.</p>
                 <p><strong>Implications for Business and Product Design</strong><br>
-                From a business standpoint, the JTBD framework is invaluable. By understanding the jobs your customers are trying to accomplish, you can design products and services that better meet their needs. Empathy is crucial here—it's about seeing beyond data points and statistics, grasping the human motivations that drive behavior. For companies, this means crafting solutions that truly resonate with users, enhancing customer satisfaction and loyalty.</p>
-                <p><strong>Conclusion</strong><br>
-                The JTBD framework has become more than just a tool for understanding consumer behavior—it's a way to practice empathy in everyday interactions. By breaking down the “jobs” that people hire products and services for, we can better understand their struggles, needs, and aspirations. This understanding not only makes us better product designers but also more compassionate individuals, capable of connecting with others on a deeper level.</p>
+                By understanding the jobs customers are trying to accomplish, products can be better aligned with their true needs. This understanding translates into better product-market fit, enhanced customer satisfaction, and more impactful solutions.</p>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>© 2024 Sijan Bhattarai | <a href="mailto:bhattaraisijan@outlook.com">Email Me</a></p>
+            <p>© 2024 Sijan Bhattarai | <a href="mailto:bhattaraisijan@outlook.com">Contact Me</a></p>
         </div>
     </footer>
+</body>
+</html>
 </body>
 </html>
