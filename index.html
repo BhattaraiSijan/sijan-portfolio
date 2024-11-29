@@ -182,6 +182,46 @@
             padding: 1rem 0;
             text-align: center;
         }
+        .certificate {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .certificate img {
+            width: 25%;
+            height: auto;
+            border-radius: 8px;
+            margin-right: 2rem;
+        }
+        .certificate div {
+            width: 75%;
+        }
+        .blog-post {
+            background-color: white;
+            padding: 2rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .blog-post h3 {
+            color: #51379e;
+            margin-bottom: 1rem;
+        }
+        .blog-post p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+        .blog-post ul {
+            text-align: left;
+            margin-top: 1rem;
+            padding-left: 20px;
+        }
         @media (max-width: 768px) {
             .container {
                 width: 90%;
@@ -271,7 +311,7 @@
                 <div class="project">
                     <h3>Agile Job Search</h3>
                     <p>This dashboard allows job seekers to apply agile principles to their job search, including effort summaries, measurable KPIs, and success metrics. It helps users maintain focus, iteratively improve, and ultimately achieve their career goals.</p>
-                    <iframe src="https://public.tableau.com/views/AgileJobsearch/EffortSummary?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" height="600"></iframe>
+                    <iframe src="https://public.tableau.com/views/AgileJobsearch/EffortSummary?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" width="100%" height="600"></iframe>
                 </div>
             </div>
         </div>
@@ -280,58 +320,57 @@
     <section id="experience" class="section">
         <div class="container">
             <h2>Professional Experience</h2>
-            <div class="experience-container">
-                        <div class="experience-container">
-                            <div class="experience">
-                                <h3>Graduate Research Assistant, Atlanta, GA</h3>
-                                <p>Georgia State University | August 2022 – Present</p>
-                                <ul>
-                                    <li>Deployed interactive experiments using the Empirica.ly (Node JS) framework in AWS EC2 that improved data quality.</li>
-                                    <li>Built a Psychology Counseling AI bot that refers to uploaded documents as knowledge base using Langflow, fastAPI, nodeJs, RAG, Pinecone vector database.</li>
-                                    <li>Built data analysis pipeline (Augmentation, cleaning, modeling, and deploying) using Python for a non-profit campaign “Fighting addiction, fueling recovery”.</li>
-                                </ul>
-                            </div>
-                            <div class="experience">
-                                <h3>Senior Software Engineer | Manager, Tokyo, Japan</h3>
-                                <p>TAI Inc. Pvt. Ltd | November 2020 – July 2022</p>
-                                <ul>
-                                    <li>Directed team coordination, mentoring, growing the cross-functional team from 4 to 25 members while maintaining a 90% sprint completion rate, showcasing strong leadership in team scaling and productivity enhancement.</li>
-                                    <li>Built software development process by establishing and facilitating agile practices, developed CI/CD pipelines for automated tests and deployments, and reduced manual deployment effort by 50%.</li>
-                                    <li>Built backend service to export server metrics from Prometheus to AWS Cloudwatch using Golang and AWS-SDK-GO, reducing manual effort by 50%. Also contributed to the open source community along with documentation.</li>
-                                    <li>Managed cloud infrastructure on AWS, employing services like EC2, S3, RDS to ensure scalability and high availability.</li>
-                                    <li>Reviewed code developed by associate engineers to ensure best practices.</li>
-                                    <li>Acted as the point of contact to the Japanese Clients ensuring all the business requirements were communicated to the engineering teams and the status and updates were communicated to the clients.</li>
-                                    <li>Mirrored Japanese clients' infrastructure locally at the Nepal office using AWS EC2.</li>
-                                    <li>Designed, developed, deployed and maintained 3 websites for the business using Python, MySQL, AWS EC2, Route 53, S3.</li>
-                                    <li>Developed cyber security and data privacy guidelines for the team to ensure that the client's requirement of workplace standards were met.</li>
-                                </ul>
-                            </div>
-                            <div class="experience">
-                                <h3>Senior Software Engineer, Dubai, UAE</h3>
-                                <p>Freelance Agencies | April 2019 – November 2020</p>
-                                <ul>
-                                    <li>Developed the backend and led a team of 4 other software engineers launching the e-commerce leading to 20K visits within the first 3 months.</li>
-                                    <li>Participated in design review with stakeholders, ensuring the adaption of the product with customers’ feedback.</li>
-                                    <li>Integrated Telr Payment gateway API to retail e-commerce, increasing checkout rate by 80%.</li>
-                                    <li>Used Python, and BeautifulSoup for web scraping, fully automating collection and update of product data for e-commerce.</li>
-                                    <li>Reviewed code developed by junior engineers ensuring best practices and coding standards were being followed.</li>
-                                    <li>Used PHP to integrate Unity contents to Moodle LMS to develop a Proof of concept for a ‘learning-by-playing’ startup idea.</li>
-                                    <li>Designed, developed, deployed and maintained at least 10 websites and e-commerce using PHP, Wordpress, Python, MySQL, jQuery.</li>
-                                </ul>
-                            </div>
-                            <div class="experience">
-                                <h3>System Development Engineer, Kathmandu, Nepal</h3>
-                                <p>ClassicTech Pvt. Ltd | January 2017 – April 2019</p>
-                                <ul>
-                                    <li>Designed, coded, and deployed a customer support ticketing system from start to finish using PHP CodeIgniter, jQuery, Ajax, and MySQL, leading to a 25% decrease in ticket resolution time and a 15% decrease in response time.</li>
-                                    <li>Wrote advanced SQL queries to generate reports for seamless decision-making for senior executives.</li>
-                                    <li>Developed documentation and educational materials for L1 support staff to adhere to and resolve customers issues tickets.</li>
-                                    <li>Analyzed sources of product and system issues and resolved the issues collaborating with cross functional teams.</li>
-                                    <li>Used Python to read sensor data and Leaflet JS to track vehicles in the open street maps.</li>
-                                    <li>Designed, developed, deployed and maintained at least 10 websites using PHP, MySQL, Python, and jQuery.</li>
-                                    <li>Contributed in the development of features for HRIS, and inventory management system.</li>
-                                </ul>
-                            </div>
+            <div class="experience-container"><div class="experience-container">
+                <div class="experience">
+                    <h3>Graduate Research Assistant, Atlanta, GA</h3>
+                    <p>Georgia State University | August 2022 – Present</p>
+                    <ul>
+                        <li>Deployed interactive experiments using the Empirica.ly (Node JS) framework in AWS EC2 that improved data quality.</li>
+                        <li>Built a Psychology Counseling AI bot that refers to uploaded documents as knowledge base using Langflow, fastAPI, nodeJs, RAG, Pinecone vector database.</li>
+                        <li>Built data analysis pipeline (Augmentation, cleaning, modeling, and deploying) using Python for a non-profit campaign “Fighting addiction, fueling recovery”.</li>
+                    </ul>
+                </div>
+                <div class="experience">
+                    <h3>Senior Software Engineer | Manager, Tokyo, Japan</h3>
+                    <p>TAI Inc. Pvt. Ltd | November 2020 – July 2022</p>
+                    <ul>
+                        <li>Directed team coordination, mentoring, growing the cross-functional team from 4 to 25 members while maintaining a 90% sprint completion rate, showcasing strong leadership in team scaling and productivity enhancement.</li>
+                        <li>Built software development process by establishing and facilitating agile practices, developed CI/CD pipelines for automated tests and deployments, and reduced manual deployment effort by 50%.</li>
+                        <li>Built backend service to export server metrics from Prometheus to AWS Cloudwatch using Golang and AWS-SDK-GO, reducing manual effort by 50%. Also contributed to the open source community along with documentation.</li>
+                        <li>Managed cloud infrastructure on AWS, employing services like EC2, S3, RDS to ensure scalability and high availability.</li>
+                        <li>Reviewed code developed by associate engineers to ensure best practices.</li>
+                        <li>Acted as the point of contact to the Japanese Clients ensuring all the business requirements were communicated to the engineering teams and the status and updates were communicated to the clients.</li>
+                        <li>Mirrored Japanese clients' infrastructure locally at the Nepal office using AWS EC2.</li>
+                        <li>Designed, developed, deployed and maintained 3 websites for the business using Python, MySQL, AWS EC2, Route 53, S3.</li>
+                        <li>Developed cyber security and data privacy guidelines for the team to ensure that the client's requirement of workplace standards were met.</li>
+                    </ul>
+                </div>
+                <div class="experience">
+                    <h3>Senior Software Engineer, Dubai, UAE</h3>
+                    <p>Freelance Agencies | April 2019 – November 2020</p>
+                    <ul>
+                        <li>Developed the backend and led a team of 4 other software engineers launching the e-commerce leading to 20K visits within the first 3 months.</li>
+                        <li>Participated in design review with stakeholders, ensuring the adaption of the product with customers’ feedback.</li>
+                        <li>Integrated Telr Payment gateway API to retail e-commerce, increasing checkout rate by 80%.</li>
+                        <li>Used Python, and BeautifulSoup for web scraping, fully automating collection and update of product data for e-commerce.</li>
+                        <li>Reviewed code developed by junior engineers ensuring best practices and coding standards were being followed.</li>
+                        <li>Used PHP to integrate Unity contents to Moodle LMS to develop a Proof of concept for a ‘learning-by-playing’ startup idea.</li>
+                        <li>Designed, developed, deployed and maintained at least 10 websites and e-commerce using PHP, Wordpress, Python, MySQL, jQuery.</li>
+                    </ul>
+                </div>
+                <div class="experience">
+                    <h3>System Development Engineer, Kathmandu, Nepal</h3>
+                    <p>ClassicTech Pvt. Ltd | January 2017 – April 2019</p>
+                    <ul>
+                        <li>Designed, coded, and deployed a customer support ticketing system from start to finish using PHP CodeIgniter, jQuery, Ajax, and MySQL, leading to a 25% decrease in ticket resolution time and a 15% decrease in response time.</li>
+                        <li>Wrote advanced SQL queries to generate reports for seamless decision-making for senior executives.</li>
+                        <li>Developed documentation and educational materials for L1 support staff to adhere to and resolve customers issues tickets.</li>
+                        <li>Analyzed sources of product and system issues and resolved the issues collaborating with cross functional teams.</li>
+                        <li>Used Python to read sensor data and Leaflet JS to track vehicles in the open street maps.</li>
+                        <li>Designed, developed, deployed and maintained at least 10 websites using PHP, MySQL, Python, and jQuery.</li>
+                        <li>Contributed in the development of features for HRIS, and inventory management system.</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -339,56 +378,59 @@
     <section id="education" class="section">
         <div class="container">
             <h2>Education</h2>
-                    <div class="education">
-                        <p><strong>Georgia State University:</strong> Master’s in Business Administration (MBA), May 2024</p>
-                        <p><strong>Tribhuvan University:</strong> Bachelor of Engineering, Electronics and Communication, Sept 2018</p>
+            <div class="education">
+                <p><strong>Georgia State University:</strong> Master’s in Business Administration (MBA), May 2024</p>
+                <p><strong>Tribhuvan University:</strong> Bachelor of Engineering, Electronics and Communication, Sept 2018</p>
+            </div>    
         </div>
     </section>
 
     <section id="certificates" class="section">
         <div class="container">
             <h2>Certificates</h2>
-                    <div class="certificate">
-                        <img src="Tableau_cert.PNG" alt="Tableau BI Analyst Certificate">
-                        <div>
-                            <h3>Tableau Business Intelligence Analyst Professional Certificate</h3>
-                            <p>Earned the Tableau Business Intelligence Analyst Professional Certificate, focusing on creating interactive data visualizations and dashboards. Gained expertise in best practices for visual storytelling and data-driven decision-making.</p>
-                            <p><a href="https://coursera.org/verify/professional-cert/E23VQIZHN8E8" target="_blank">Verify this Certificate</a></p>
-                        </div>
-                    </div>
-                    <div class="certificate">
-                        <img src="Google_cert.PNG" alt="Google Data Analytics Certificate">
-                        <div>
-                            <h3>Google Data Analytics Professional Certificate</h3>
-                            <p>Completed the Google Data Analytics Professional Certificate, gaining comprehensive training in data preparation, cleaning, analysis, and visualization. Tools used include spreadsheets, SQL, Tableau, and R to drive data-centric decisions.</p>
-                            <p><a href="https://coursera.org/verify/professional-cert/V7SA9E1PAH6Y" target="_blank">Verify this Certificate</a></p>
-                        </div>
+            <div class="certificate">
+                <img src="Tableau_cert.PNG" alt="Tableau BI Analyst Certificate">
+                <div>
+                    <h3>Tableau Business Intelligence Analyst Professional Certificate</h3>
+                    <p>Earned the Tableau Business Intelligence Analyst Professional Certificate, focusing on creating interactive data visualizations and dashboards. Gained expertise in best practices for visual storytelling and data-driven decision-making.</p>
+                    <p><a href="https://coursera.org/verify/professional-cert/E23VQIZHN8E8" target="_blank">Verify this Certificate</a></p>
+                </div>
+            </div>
+            <div class="certificate">
+                <img src="Google_cert.PNG" alt="Google Data Analytics Certificate">
+                <div>
+                    <h3>Google Data Analytics Professional Certificate</h3>
+                    <p>Completed the Google Data Analytics Professional Certificate, gaining comprehensive training in data preparation, cleaning, analysis, and visualization. Tools used include spreadsheets, SQL, Tableau, and R to drive data-centric decisions.</p>
+                    <p><a href="https://coursera.org/verify/professional-cert/V7SA9E1PAH6Y" target="_blank">Verify this Certificate</a></p>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="blog" class="section">
         <div class="container">
             <h2>Blog</h2>
-                    <div class="blog-post">
-                        <h3>Practicing Empathy with the Jobs-to-be-Done Framework</h3>
-                        <p>During a course called Innovation and Creativity, I was introduced to a concept that completely changed how I view human behavior and product design: the Jobs-to-be-Done (JTBD) framework. This framework posits that people don’t simply buy products or use services—they “hire” them to get specific jobs done. Understanding this nuance reshaped how I think about empathy and the ways we can proactively improve it in everyday life.</p>
-                        <p><strong>The JTBD Framework in Everyday Life</strong><br>
-                        The core idea of JTBD is that every action we take is driven by a job we’re trying to accomplish. For instance, when someone opens a transit app like MARTA (Atlanta’s public transit system), they’re not just seeking information but are likely hiring the app to make their commute less stressful. Their underlying job might be “planning a smooth, delay-free journey,” and pain points like confusing interface elements or slow updates can frustrate that effort.</p>
-                        <p>When I started using the MARTA app during my time in Atlanta, I found myself naturally applying the JTBD framework. I would dissect every feature, trying to understand what jobs people were hiring the app for and how well it served those needs. This habit made me more aware of others' motivations, struggles, and emotional responses. It sparked a sense of empathy—an understanding of what it feels like to be in another person's shoes, trying to accomplish their task seamlessly.</p>
-                        <p><strong>Breaking Down Actions to Build Empathy</strong><br>
-                        To actively practice empathy using JTBD, I developed a routine. I would observe people around me—on buses, in classrooms, or at public parks—and try to understand their behaviors through the lens of the jobs they were trying to do. I’d break down their actions into smaller units and think about the pain points, emotions, and rewards tied to each task. For example:</p>
-                        <ul>
-                            <li><strong>Public Transit Users:</strong> Navigating schedules and planning routes efficiently while hoping to avoid delays.</li>
-                            <li><strong>Students in Class:</strong> Staying engaged and taking meaningful notes, fighting the distraction of digital notifications.</li>
-                            <li><strong>Shoppers at Grocery Stores:</strong> Trying to make quick yet thoughtful purchasing decisions while managing their budgets.</li>
-                        </ul>
-                        <p>This approach made me more attuned to the small frustrations that can significantly impact someone's day. By mentally mapping out the motivations and emotions behind others’ actions, I cultivated a more nuanced understanding of their perspectives.</p>
-                        <p><strong>How This Practice Enhances Empathy</strong><br>
-                        Applying the JTBD framework in daily life allows us to step outside of our assumptions and biases. Instead of judging or dismissing behavior as irrational, we learn to consider the jobs people are trying to accomplish and the obstacles they face. This structured way of thinking fosters a deeper appreciation of other people’s experiences and needs, making empathy less abstract and more actionable.</p>
-                        <p><strong>Implications for Business and Product Design</strong><br>
-                        From a business standpoint, the JTBD framework is invaluable. By understanding the jobs your customers are trying to accomplish, you can design products and services that better meet their needs. Empathy is crucial here—it's about seeing beyond data points and statistics, grasping the human motivations that drive behavior. For companies, this means crafting solutions that truly resonate with users, enhancing customer satisfaction and loyalty.</p>
-                        <p><strong>Conclusion</strong><br>
-                        The JTBD framework has become more than just a tool for understanding consumer behavior—it's a way to practice empathy in everyday interactions. By breaking down the “jobs” that people hire products and services for, we can better understand their struggles, needs, and aspirations. This understanding not only makes us better product designers but also more compassionate individuals, capable of connecting with others on a deeper level.</p>
+            <div class="blog-post">
+                <h3>Practicing Empathy with the Jobs-to-be-Done Framework</h3>
+                <p>During a course called Innovation and Creativity, I was introduced to a concept that completely changed how I view human behavior and product design: the Jobs-to-be-Done (JTBD) framework. This framework posits that people don’t simply buy products or use services—they “hire” them to get specific jobs done. Understanding this nuance reshaped how I think about empathy and the ways we can proactively improve it in everyday life.</p>
+                <p><strong>The JTBD Framework in Everyday Life</strong><br>
+                The core idea of JTBD is that every action we take is driven by a job we’re trying to accomplish. For instance, when someone opens a transit app like MARTA (Atlanta’s public transit system), they’re not just seeking information but are likely hiring the app to make their commute less stressful. Their underlying job might be “planning a smooth, delay-free journey,” and pain points like confusing interface elements or slow updates can frustrate that effort.</p>
+                <p>When I started using the MARTA app during my time in Atlanta, I found myself naturally applying the JTBD framework. I would dissect every feature, trying to understand what jobs people were hiring the app for and how well it served those needs. This habit made me more aware of others' motivations, struggles, and emotional responses. It sparked a sense of empathy—an understanding of what it feels like to be in another person's shoes, trying to accomplish their task seamlessly.</p>
+                <p><strong>Breaking Down Actions to Build Empathy</strong><br>
+                To actively practice empathy using JTBD, I developed a routine. I would observe people around me—on buses, in classrooms, or at public parks—and try to understand their behaviors through the lens of the jobs they were trying to do. I’d break down their actions into smaller units and think about the pain points, emotions, and rewards tied to each task. For example:</p>
+                <ul>
+                    <li><strong>Public Transit Users:</strong> Navigating schedules and planning routes efficiently while hoping to avoid delays.</li>
+                    <li><strong>Students in Class:</strong> Staying engaged and taking meaningful notes, fighting the distraction of digital notifications.</li>
+                    <li><strong>Shoppers at Grocery Stores:</strong> Trying to make quick yet thoughtful purchasing decisions while managing their budgets.</li>
+                </ul>
+                <p>This approach made me more attuned to the small frustrations that can significantly impact someone's day. By mentally mapping out the motivations and emotions behind others’ actions, I cultivated a more nuanced understanding of their perspectives.</p>
+                <p><strong>How This Practice Enhances Empathy</strong><br>
+                Applying the JTBD framework in daily life allows us to step outside of our assumptions and biases. Instead of judging or dismissing behavior as irrational, we learn to consider the jobs people are trying to accomplish and the obstacles they face. This structured way of thinking fosters a deeper appreciation of other people’s experiences and needs, making empathy less abstract and more actionable.</p>
+                <p><strong>Implications for Business and Product Design</strong><br>
+                From a business standpoint, the JTBD framework is invaluable. By understanding the jobs your customers are trying to accomplish, you can design products and services that better meet their needs. Empathy is crucial here—it's about seeing beyond data points and statistics, grasping the human motivations that drive behavior. For companies, this means crafting solutions that truly resonate with users, enhancing customer satisfaction and loyalty.</p>
+                <p><strong>Conclusion</strong><br>
+                The JTBD framework has become more than just a tool for understanding consumer behavior—it's a way to practice empathy in everyday interactions. By breaking down the “jobs” that people hire products and services for, we can better understand their struggles, needs, and aspirations. This understanding not only makes us better product designers but also more compassionate individuals, capable of connecting with others on a deeper level.</p>
+            </div>
         </div>
     </section>
 
