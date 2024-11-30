@@ -168,6 +168,23 @@
             background-color: #51379e;
             color: #fff;
         }
+        .project-tab-text {
+            cursor: pointer;
+            font-size: 1rem;
+            padding: 0.5rem;
+            margin: 0 0.5rem;
+            position: relative;
+        }
+        .project-tab-text.active::after, .project-tab-text:hover::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: blue;
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+        }
         .project-content {
             display: none;
         }
@@ -355,7 +372,7 @@
     </style>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-        const tabs = document.querySelectorAll(".project-tab");
+        const tabs = document.querySelectorAll(".project-tab-text");
         const contents = document.querySelectorAll(".project-content");
         let currentIndex = 0;
 
@@ -419,8 +436,8 @@
         <div class="container">
             <h2>Projects</h2>
             <div class="project-tabs">
-                <div class="project-tab active">Donor Behavior Analytics</div>
-                <div class="project-tab">Agile Job Search</div>
+                <span class="project-tab-text active">Donor Behavior Analytics</span>
+                <span class="project-tab-text">Agile Job Search</span>
             </div>
             <div class="project-content active">
                 <div class="project">
